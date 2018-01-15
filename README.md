@@ -5,10 +5,14 @@ REST service is created using Spring Initializr.
 All applications need data. Instead of talking to a real database, we will use an ArrayList - kind of an in-memory data store.
 A student can take multiple courses. A course has an id, name, description and a list of steps you need to complete to finish the course. A student has an id, name, description and a list of courses he/she is currently registered for. We have StudentService exposing methods to
 
-public List<Student> retrieveAllStudents() - Retrieve details for all students
-public Student retrieveStudent(String studentId) - Retrieve a specific student details
-public List<Course> retrieveCourses(String studentId) - Retrieve all courses a student is registered for
+public List<Student> retrieveAllStudents() - Retrieve details for all students.
+  
+public Student retrieveStudent(String studentId) - Retrieve a specific student details.
+
+public List<Course> retrieveCourses(String studentId) - Retrieve all courses a student is registered for.
+  
 public Course retrieveCourse(String studentId, String courseId) - Retrieve details of a specific course a student is registered for
+
 public Course addCourse(String studentId, Course course) - Add a course to an existing student
 
 The Rest Service StudentController exposes couple of get services. we will create three services using proper URIs and HTTP methods
